@@ -1,0 +1,546 @@
+
+body {
+	margin: 10px;
+	background: -webkit-linear-gradient(#21004F, #9580FF);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.grid-container {
+
+	display: grid;
+	grid-template-columns: 1fr;
+
+	grid-template-areas: 
+		"datum"
+		"titeltijd"
+		"tijd" 
+		"titelaftellen"
+		"aftellen"
+		"afbeelding"
+		;
+
+}
+
+img {
+ 	width: 100%;
+ 	border-radius: 25px 25px;
+}
+
+p {
+	color: #93D3FF;
+	font-family: clone-rounded-latin,sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 35px;
+
+}
+
+H1 {
+	color: #95A1FF;
+	font-family: urbana,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+}
+
+
+
+.grid-item {
+	background-color: rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.onderdeel1 {
+	grid-area: datum;
+	margin-top: 30px;
+	max-height: 80px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.0);
+	padding-left: 35%;
+}
+
+.onderdeel1 p{
+	color: white;
+	font-family: urbana,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 60px;
+}
+
+.onderdeel2 {
+	grid-area: titeltijd;
+	text-align: center;
+	border-top-left-radius: 35px 35px;
+	border-top-right-radius: 35px 35px;
+	border-bottom-left-radius: 0px 0px;
+	border-bottom-right-radius: 0px 0px;
+	max-height: 60px;
+
+}
+
+.onderdeel3 {
+	grid-area: tijd;
+	text-align: center;
+	border-bottom-left-radius: 35px 35px;
+	border-bottom-right-radius: 35px 35px;
+	border-top-left-radius: 0px 0px;
+	border-top-right-radius: 0px 0px;
+	padding-bottom: 10px;
+	max-height: 60px;
+}
+
+.onderdeel4{
+	grid-area: titelaftellen;
+	margin-top: 20px;
+	text-align: center;
+	border-top-left-radius: 35px 35px;
+	border-top-right-radius: 35px 35px;
+	border-bottom-left-radius: 0px 0px;
+	border-bottom-right-radius: 0px 0px;
+	max-height: 110px;
+
+}
+
+.onderdeel5 {
+	grid-area: aftellen;
+	text-align: center;
+	border-bottom-left-radius: 35px 35px;
+	border-bottom-right-radius: 35px 35px;
+	border-top-left-radius: 0px 0px;
+	border-top-right-radius: 0px 0px;
+	max-height: 60px;
+	padding-bottom: 10px;
+}
+
+
+
+.onderdeel6 {
+	grid-area: afbeelding;
+	margin-top: 20px;
+	border-radius: 30px 30px;
+	align-content: center;
+	padding: 0px;
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px){
+
+	.grid-container {
+
+		display: grid;
+		grid-template-columns: 2fr;
+
+		grid-template-areas: 
+			"datum datum"
+			"titeltijd tijd" 
+			"titelaftellen aftellen"
+			"afbeelding afbeelding"
+			"afbeelding afbeelding"
+			;
+	}
+
+	img {
+ 	width: 100%;
+ 	border-radius: 25px 25px;
+	}
+
+	p {
+		color: #93D3FF;
+		font-family: clone-rounded-latin,sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		font-size: 40px;
+
+	}
+
+	H1 {
+		color: #95A1FF;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 35px;
+	}
+
+
+
+	.grid-item {
+		background-color: rgba(0, 0, 0, 0.3);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.onderdeel1 {
+		grid-area: datum;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		max-height: 80px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0.0);
+		padding-left: 50%;
+	}
+
+	.onderdeel1 p{
+		color: white;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 80px;
+	}
+
+	.onderdeel2 {
+		grid-area: titeltijd;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 100px;
+
+	}
+
+	.onderdeel3 {
+		grid-area: tijd;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 100px;
+		padding-bottom: 0px;
+	}
+
+	.onderdeel4{
+		grid-area: titelaftellen;
+		margin-top: 20px;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 110px;
+
+	}
+
+	.onderdeel5 {
+		grid-area: aftellen;
+		margin-top: 20px;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 110px;
+		padding-bottom: 0px;
+		padding-right: 20px;
+		padding-left: 10px;
+	}
+
+
+
+	.onderdeel6 {
+		grid-area: afbeelding;
+		margin-top: 20px;
+		border-radius: 30px 30px;
+		align-content: center;
+		padding: 0px;
+
+	}
+
+
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 1200px){
+
+	.grid-container {
+
+		display: grid;
+		grid-template-columns: 3fr;
+
+		grid-template-areas: 
+			"datum datum"
+			"titeltijd titelaftellen" 
+			"tijd aftellen"
+			"afbeelding afbeelding"
+			"afbeelding afbeelding"
+			;
+	}
+
+	img {
+ 	width: 100%;
+ 	border-radius: 25px 25px;
+	}
+
+	p {
+		color: #93D3FF;
+		font-family: clone-rounded-latin,sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		font-size: 40px;
+
+	}
+
+	H1 {
+		color: #95A1FF;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 45px;
+	}
+
+
+
+	.grid-item {
+		background-color: rgba(0, 0, 0, 0.3);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.onderdeel1 {
+		grid-area: datum;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		max-height: 80px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0.0);
+		padding-left: 50%;
+	}
+
+	.onderdeel1 p{
+		color: white;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 100px;
+	}
+
+	.onderdeel2 {
+		grid-area: titeltijd;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 100px;
+		margin-right: 10px;
+		padding: 10px;
+
+	}
+
+	.onderdeel3 {
+		grid-area: tijd;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 100px;
+		padding-bottom: 0px;
+		margin-right: 10px;
+		padding: 10px;
+	}
+
+	.onderdeel4{
+		grid-area: titelaftellen;
+		margin-top: 0px;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 100px;
+		padding: 10px;
+		margin-left: 10px;
+
+	}
+
+	.onderdeel5 {
+		grid-area: aftellen;
+		margin-top: 0px;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 100px;
+		padding: 10px;
+		margin-left: 10px;
+	}
+
+
+
+	.onderdeel6 {
+		grid-area: afbeelding;
+		margin-top: 20px;
+		border-radius: 30px 30px;
+		align-content: center;
+		padding: 0px;
+
+	}
+
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1800px){
+
+	.grid-container {
+
+		display: grid;
+		grid-template-columns: 2fr;
+
+		grid-template-areas: 
+			"datum datum"
+			"titeltijd afbeelding" 
+			"tijd afbeelding"
+			"titelaftellen afbeelding"
+			"aftellen afbeelding"
+			;
+	}
+
+	img {
+ 	width: 100%;
+ 	border-radius: 25px 25px;
+	}
+
+	p {
+		color: #93D3FF;
+		font-family: clone-rounded-latin,sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		font-size: 40px;
+
+	}
+
+	H1 {
+		color: #95A1FF;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 45px;
+	}
+
+
+
+	.grid-item {
+		background-color: rgba(0, 0, 0, 0.3);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.onderdeel1 {
+		grid-area: datum;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		max-height: 80px;
+		border: none;
+		background-color: rgba(0, 0, 0, 0.0);
+		padding-left: 70%;
+	}
+
+	.onderdeel1 p{
+		color: white;
+		font-family: urbana,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 100px;
+	}
+
+	.onderdeel2 {
+		grid-area: titeltijd;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 100px;
+		margin-right: 0px;
+		margin-left: 25px;
+		padding: 10px;
+		min-width: 450px;
+
+	}
+
+	.onderdeel3 {
+		grid-area: tijd;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 100px;
+		padding-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 25px;
+		padding: 10px;
+	}
+
+	.onderdeel4{
+		grid-area: titelaftellen;
+		margin-top: 10px;
+		text-align: center;
+		border-top-left-radius: 35px 35px;
+		border-top-right-radius: 35px 35px;
+		border-bottom-right-radius: 0px 0px;
+		border-bottom-left-radius: 0px 0px;
+		max-height: 100px;
+		padding: 10px;
+		margin-left: 25px;
+		margin-right: 0px;
+
+	}
+
+	.onderdeel5 {
+		grid-area: aftellen;
+		margin-top: 0px;
+		text-align: center;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 0px 0px;
+		border-bottom-right-radius: 35px 35px;
+		border-bottom-left-radius: 35px 35px;
+		max-height: 100px;
+		padding: 10px;
+		margin-left: 25px;
+		margin-right: 0px;
+	}
+
+
+
+	.onderdeel6 {
+		grid-area: afbeelding;
+		margin-top: 0px;
+		border-radius: 30px 30px;
+		align-content: center;
+		padding: 0px;
+		max-width: 100%;
+		margin-left: 30px;
+		margin-right: 25px;
+
+	}
+
+
+}
+
+
+
